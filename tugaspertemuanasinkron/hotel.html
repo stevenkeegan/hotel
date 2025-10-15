@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Reservation Hotel Room</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+        fieldset {
+            width: 400px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 200px; /* Memastikan textbox tidak terlalu panjang */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Reservation Hotel Room</h1>
+
+<form action="#" method="post">
+
+    <fieldset>
+        <legend>Personal Date</legend>
+        
+        <p>1. Name<br />
+        <input type="text" id="name" name="name" /></p>
+
+        <p>2. Gender<br />
+        <input type="text" id="gender" name="gender" /></p>
+
+        <p>3. Email Address<br />
+        <input type="text" id="email" name="email" /></p>
+
+        <p>4. Telp Number<br />
+        <input type="text" id="telp" name="telp" /></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Reservation Room form</legend>
+
+        <p>1. Reservatorn Name<br />
+        <input type="text" id="reservatorn_name" name="reservatorn_name" /></p>
+
+        <p>2. Bookig date<br />
+        <input type="text" id="booking_date" name="booking_date" /></p>
+
+        <p>3. Room Type<br />
+        <select id="room_type" name="room_type">
+            <option value="deluxe">Deluxe</option>
+        </select></p>
+        
+        <p>4. Bed Type<br />
+        <select id="bed_type" name="bed_type">
+            <option value="single_bed">Singgle bed</option>
+        </select></p>
+
+        <p>5. Breakfast<br />
+        <input type="radio" id="with_breakfast" name="breakfast" value="with_breakfast" checked="checked" />
+        <label for="with_breakfast">Whit Breakfast</label>
+            
+        <input type="radio" id="without_breakfast" name="breakfast" value="without_breakfast" />
+        <label for="without_breakfast">Whitout Breakfast</label></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Payment</legend>
+        
+        <p>1. Chek in date<br />
+        <input type="text" id="check_in" name="check_in" /></p>
+
+        <p>2. Chek out date<br />
+        <input type="text" id="check_out" name="check_out" /></p>
+
+        <p>3. Payment Method<br />
+        <select id="payment_method" name="payment_method">
+            <option value="cash">cash</option>
+        </select></p>
+    </fieldset>
+    
+    <input type="submit" value="submit" />
+
+</form>
+
+</body>
+</html>
